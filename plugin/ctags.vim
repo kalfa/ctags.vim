@@ -25,8 +25,10 @@
 
 if !exists("ctags_path")
     "let g:ctags_path='ctags'
+    let g:ctags_path='/usr/bin/ctags'
+endif
+if !exists("ctags_args")
     "let g:ctags_args=''
-    let g:ctags_path=$VIM.'/ctags/ctags'
     let g:ctags_args='-I __declspec+'
 endif
 
